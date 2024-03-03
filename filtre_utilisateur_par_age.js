@@ -9,6 +9,22 @@ const personnes = [
   ];
   const ageMinimum = 25;
 
+  function filterAge () {
+    const arrayOfUsers = personnes.filter((personne) => personne.age >= 25);
+
+    return arrayOfUsers;
+  }
+
+  console.log(filterAge());
+
+  function filterAgeUnderCondition (data) {
+    const arrayOfUsers = personnes.filter((personne) => personne.age > data);
+
+    return arrayOfUsers;
+  }
+
+  console.log(filterAgeUnderCondition(25));
+
   /**
    * Ex : Utilisateurs de 25 ans et plus : [{ nom: 'Alice', age: 25 }, { nom: 'Bob', age: 30 }]
    */

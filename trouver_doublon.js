@@ -8,6 +8,13 @@ const elements = [
   { id: 3, nom: "Alice" },
 ];
 
+function eliminerDoublons(elements) {
+  return elements.filter((element, index) => elements.findIndex(e => e.nom === element.nom) === index);
+}
+
+const elementsUniques = eliminerDoublons(elements);
+console.log("Les éléments uniques sont : ", elementsUniques);
+
 /**
  * Ex : [{ id: 3, nom: 'Alice' }]
  */

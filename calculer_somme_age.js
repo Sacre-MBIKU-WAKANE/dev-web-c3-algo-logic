@@ -18,7 +18,7 @@ function calculeSommmeAge() {
 }
 console.log(calculeSommmeAge());
 
-function trieUtilisateur() {
+function sortedUsers() {
   
   let arrayOfNames = [];
 
@@ -32,7 +32,7 @@ function trieUtilisateur() {
   return trie;
 }
 
-console.log(trieUtilisateur());
+console.log(sortedUsers());
 
 /**
  * Ex: Somme des âges : 75

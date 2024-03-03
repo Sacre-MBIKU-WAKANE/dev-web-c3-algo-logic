@@ -8,6 +8,24 @@ const personnes = [
   { nom: "Charlie", age: 20 },
 ];
 
+function sortedFromYoungestToOldest () {
+  const resut = personnes.sort(
+    (a, b) => a.age - b.age
+  );
+  return resut;
+}
+
+console.log(sortedFromYoungestToOldest());
+
+function sortedFromtOldestToYounges () {
+  const resut = personnes.sort(
+    (a, b) => b.age - a.age
+  );
+  return resut;
+}
+
+console.log(sortedFromtOldestToYounges());
+
 /**
    * Ex: Plus jeune : { nom: 'Charlie', age: 20 }
          Plus âgé : { nom: 'Bob', age: 30 }

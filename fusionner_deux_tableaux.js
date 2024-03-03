@@ -10,7 +10,20 @@ const tableau2 = [
   { id: 2, nom: 'Bob' },
   { id: 3, nom: 'Charlie' }
 ];
+function fusionnerTableauxSansDoublons(tableau1, tableau2) {
+  const mergedArray = [...tableau1];
 
+  tableau2.forEach(item => {
+      if (!mergedArray.some(elem => elem.id === item.id)) {
+          mergedArray.push(item);
+      }
+  });
+
+  return mergedArray;
+}
+
+const tableauFusionne = fusionnerTableauxSansDoublons(tableau1, tableau2);
+console.log(tableauFusionne);
 /**
  * Ex: [{ id: 1, nom: 'Alice' }, { id: 2, nom: 'Bob' }, { id: 3, nom: 'Charlie' }]
  */

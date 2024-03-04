@@ -10,6 +10,29 @@ const etudiants = [
   { nom: "Eve", note: 90 },
 ];
 
+function calculAverage() {
+  let noteArray = [];
+
+  etudiants.forEach((student) => {
+    noteArray.push(student.note);
+  })
+
+
+  let notesSum = eval(noteArray.join("+"));
+  let length = etudiants.length;
+  console.log(length);
+
+  console.log(notesSum);
+
+  const average = Number(notesSum / length);
+
+  return average;
+
+
+}
+// calculAverage()
+console.log(calculAverage());
+
 /**
  * Ex: Moyenne : 80
        Médiane : 80
